@@ -13,7 +13,7 @@ COPY ./apps/ws-server ./apps/ws-server
 
 
 RUN bun install 
-RUN bun run db:migrate
+RUN bun run db:generate
 
 
 EXPOSE 8080

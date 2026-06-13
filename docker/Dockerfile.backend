@@ -13,7 +13,7 @@ COPY ./apps/https ./apps/https
 
 
 RUN bun install 
-RUN bun db:migrate
+RUN bun run db:generate
 
 EXPOSE 3001
 
